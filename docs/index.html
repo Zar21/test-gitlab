@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test GitLab</title>
+</head>
+<body>
+    <p>Despliegue de aplicaciones Web
+UD 2. SISTEMAS DE CONTROL DE VERSIONES
+
+PRACTICA 1.
+
+Crear y gestionar nuestro servidor de Git
+
+GitLab nació en 2011 como un proyecto dentro de GitHub y con el tiempo, evolucionó para
+convertirse en una alternativa que proporciona repositorios privados de código gratuitos (cosa
+que GitHub sólo ofrece en su modo de pago) mediante una interfaz muy ligera y simple.</p>
+<p>La tarea a realizar en esta práctica consistirá en elaborar un documento (presentado a través
+de GitHub Pages o GitLab Pages) en el que especifiquéis los pasos a realizar para:
+- (2 puntos) Instalar GitLab en local permitiéndonos disponer de un repositorio Git
+propio en nuestra máquina.</p>
+
+
+<p>Lo primero que tenemos que hacer es instalar las dependencias de GitLab:</p>
+<img src="1.png">
+
+<p>Cuando tengamos las dependencias correctamente instaladas ya podemos instalar GitLab
+Añadimos el repositorio de GitLab media este curl</p>
+<img src="2.png">
+
+<p>Y instalamos el gitlab-ce</p>
+<img src="3.png">
+
+<p>Entramos al fichero /etc/gitlab/gitlab.rb y cambiamos el campo 
+external_url por el dominio que vayamos a usar (En nuestro caso localhost)</p>
+<img src="4.png">
+
+<p>Ahora ejecutamos el siguiente comando para que se aplique la conficuración realizada</p>
+<img src="5.png">
+
+
+<p>- (1 punto) Realizar labores de administración inicial como por ejemplo:
+o Cambiar el puerto de acceso.
+o Impedir que usuarios nuevos puedan modificar su identificador.
+o Modificar el tiempo de expiración de la sesión.</p>
+
+<p>Ahora accedemos a localhost o al dominio que hayas introduccido y veras una pantalla donde te pedira crear la contraseña de root
+Despues de crear la contraseña de root podras registrar a un nuevo usuario y disponer de una cuenta propia.
+Para modificar el puerto y restringir a los usuarios el cambio de username debemos cambiar el fichero gitlab.rb</p>
+<img src="6.png"><br/>
+<img src="7.png">
+<p>Cuando tengamos los cambios realizados debemos ejecutar el comando</p>
+<img src="8.png">
+
+<p>Podemos modificar el tiempo de expiración de la sesion entrando en la cuenta root de nuestro GitLab, entrando a admin area, en settings, en account and limit</p>
+<img src="9.png">
+<p>- (2 puntos) Detallar ejemplos de procesos (vía llamadas a la API) como:
+o Alta, modificación y borrado de usuarios.
+o Bloqueo/desbloqueo de usuarios.
+o Establecer usuario como administrador.
+o Creación de proyectos.</p>
+
+<p>Para poder usar la api lo primero que vamos a necesitar es generar un access token desde los settings del usuario</p>
+<img src="10.png">
+<p>Gracias a este token podemos por ejemplo obtener todos los usuarios que hay en el gitlab</p>
+<img src="11.png">
+<p>Usando la api podemos crear usuarios </p>
+<img src="12.png">
+
+<p>Tambien modificar usuarios (Hay que especificar que usuario se tiene que modificar mediante el id)</p>
+<img src="13.png">
+
+<p>Y finalmente borrar usuarios (Igual que al modificarlos hay que especificar el id)</p>
+<img src="14.png">
+
+<p>Para bloquear un usuario debemos especificar el id en la ruta y añadir despues de el id /block</p>
+<img src="15.png">
+
+<p>Para desbloquear lo mismo que cuando bloqueamos pero tenemos que poner /unblock</p>
+<img src="16.png">
+
+
+<p>Para pasar un usuario a admin debemos actualizar el parametro is_admin usando el parametro admin=true en una peticion sobre el usuario</p>
+<img src="17.png">
+
+<p>Podemos tambien crear proyectos desde la api mediante /projects</p>
+<img src="18.png">
+<p>En esta captura creo un nuevo proyecto solo poniendole en nombre que va a tener. Si no se especifica usuario se atribuye directamente al usuario root.
+Para crear un proyecto para un usuario debemos agregar la ruta /user/:id-user</p>
+<img src="19.png">
+<p>- (1 punto) Realizar labores de customización como por ejemplo:
+o Modificar la página de creación de un nuevo proyecto.
+o Modificar el logo y la descripción de la pantalla de login.
+o Modificar el favicon de gitlab.</p>
+
+<p>Para modificar la apariencia de la pagina debemos acceder desde un usuario administrados a la admin area y entra a apperance
+En este ejemplo modifico la apariencia de la pagina de creación de proyectos</p>
+<img src="20.png"><br/>
+<img src="21.png">
+<p>Tambien podemos modificar:
+<img src="22.png"><br/>
+<img src="23.png">
+<p>- (2 puntos) Detallar el proceso para poder importar proyectos de GitHub a nuestro</p>
+GitLab tanto por pantalla como utilizando la API.
+
+<p>Para importar un proyecto de github a gitlab debemos entrar a crear un nuevo proyecto y a importar proyecto ahi debemos seleccionar github</p>
+<img src="24.png">
+<p>Necesitamos generar un token desde github
+IMPORTANTE
+El mail tiene que ser el mismo tanto en github como en gitlab</p>
+<img src="25.png"><br/>
+<img src="26.png">
+<p>Al acceder con el token en gitlab veremos todos los proyectos de github que podemos importar</p>
+<img src="27.png">
+<p>Para realizar una importacion desde la api debemos usar la ruta /import/github
+Hay que añadir el token que hemos generado antes</p>
+<img src="28.png">
+
+<p>Tambien hay que añadir el id del repositorio con el parametro repo_id</p>
+<img src="29.png">
+<p>- (2 puntos) Documentación correcta en GitHub Pages o GitLab Pages.</p>
+</body>
+</html> 
