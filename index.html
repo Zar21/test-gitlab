@@ -4,6 +4,8 @@
 <!--
 span.cls_002{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 div.cls_002{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:11.1px;color:rgb(0,255,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:11.1px;color:rgb(0,255,0);font-weight:normal;font-style:normal;text-decoration: none}
 -->
 </style>
 <script type="text/javascript" src="assets/wz_jsgraphics.js"></script>
@@ -11,68 +13,122 @@ div.cls_002{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weigh
 <body>
 <div style="position:absolute;left:50%;margin-left:-298px;top:0px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background1.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:71.57px" class="cls_002"><span class="cls_002">- Crear un repositorio con las ramas de master y develop.</span></div>
-<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">Mediante el comando git flow init se genera la estructura de git flow sobre nuestro proyecto</span></div>
-<div style="position:absolute;left:72.06px;top:283.99px" class="cls_002"><span class="cls_002">- (2 puntos) Generar diferentes features con pequeños cambios en el proyecto. Algunas</span></div>
-<div style="position:absolute;left:72.06px;top:299.01px" class="cls_002"><span class="cls_002">de las features deben modificar un mismo fichero.</span></div>
-<div style="position:absolute;left:72.06px;top:329.03px" class="cls_002"><span class="cls_002">Usando los diferentes comandos de git flow podemos trabajar comodamente con la</span></div>
-<div style="position:absolute;left:72.06px;top:344.04px" class="cls_002"><span class="cls_002">features.</span></div>
-<div style="position:absolute;left:72.06px;top:359.06px" class="cls_002"><span class="cls_002">Para crear una nueva feature deberemos usar git flow feature start nombre</span></div>
-<div style="position:absolute;left:72.06px;top:577.49px" class="cls_002"><span class="cls_002">Cuando la feature este terminada usaremos el comando git flow feature finish nombre</span></div>
+<img src="assets/background01.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:71.57px" class="cls_002"><span class="cls_002">Despliegue de aplicaciones Web</span></div>
+<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">UD 2. SISTEMAS DE CONTROL DE VERSIONES</span></div>
+<div style="position:absolute;left:72.06px;top:116.60px" class="cls_002"><span class="cls_002">PRACTICA 1.</span></div>
+<div style="position:absolute;left:72.06px;top:146.63px" class="cls_002"><span class="cls_002">Crear y gestionar nuestro servidor de Git</span></div>
+<div style="position:absolute;left:72.06px;top:176.65px" class="cls_002"><span class="cls_002">GitLab nació en 2011 como un proyecto dentro de GitHub y con el tiempo, evolucionó para</span></div>
+<div style="position:absolute;left:72.06px;top:191.67px" class="cls_002"><span class="cls_002">convertirse en una alternativa que proporciona repositorios privados de código gratuitos</span></div>
+<div style="position:absolute;left:72.06px;top:206.68px" class="cls_002"><span class="cls_002">(cosa</span></div>
+<div style="position:absolute;left:72.06px;top:221.69px" class="cls_002"><span class="cls_002">que GitHub sólo ofrece en su modo de pago) mediante una interfaz muy ligera y simple.</span></div>
+<div style="position:absolute;left:72.06px;top:236.70px" class="cls_002"><span class="cls_002">La tarea a realizar en esta práctica consistirá en elaborar un documento (presentado a</span></div>
+<div style="position:absolute;left:72.06px;top:251.72px" class="cls_002"><span class="cls_002">través</span></div>
+<div style="position:absolute;left:72.06px;top:266.73px" class="cls_002"><span class="cls_002">de GitHub Pages o GitLab Pages) en el que especifiquéis los pasos a realizar para:</span></div>
+<div style="position:absolute;left:72.06px;top:281.74px" class="cls_002"><span class="cls_002">- (2 puntos) Instalar GitLab en local permitiéndonos disponer de un repositorio Git</span></div>
+<div style="position:absolute;left:72.06px;top:296.75px" class="cls_002"><span class="cls_002">propio en nuestra máquina.</span></div>
+<div style="position:absolute;left:72.06px;top:311.77px" class="cls_002"><span class="cls_002">- (1 punto) Realizar labores de administración inicial como por ejemplo:</span></div>
+<div style="position:absolute;left:72.06px;top:326.78px" class="cls_002"><span class="cls_002">o Cambiar el puerto de acceso.</span></div>
+<div style="position:absolute;left:72.06px;top:341.79px" class="cls_002"><span class="cls_002">o Impedir que usuarios nuevos puedan modificar su identificador.</span></div>
+<div style="position:absolute;left:72.06px;top:356.80px" class="cls_002"><span class="cls_002">o Modificar el tiempo de expiración de la sesión.</span></div>
+<div style="position:absolute;left:72.06px;top:371.82px" class="cls_002"><span class="cls_002">- (2 puntos) Detallar ejemplos de procesos (vía llamadas a la API) como:</span></div>
+<div style="position:absolute;left:72.06px;top:386.83px" class="cls_002"><span class="cls_002">o Alta, modificación y borrado de usuarios.</span></div>
+<div style="position:absolute;left:72.06px;top:401.84px" class="cls_002"><span class="cls_002">o Bloqueo/desbloqueo de usuarios.</span></div>
+<div style="position:absolute;left:72.06px;top:416.85px" class="cls_002"><span class="cls_002">o Establecer usuario como administrador.</span></div>
+<div style="position:absolute;left:72.06px;top:431.87px" class="cls_002"><span class="cls_002">o Creación de proyectos.</span></div>
+<div style="position:absolute;left:72.06px;top:446.88px" class="cls_002"><span class="cls_002">- (1 punto) Realizar labores de customización como por ejemplo:</span></div>
+<div style="position:absolute;left:72.06px;top:461.89px" class="cls_002"><span class="cls_002">o Modificar la página de creación de un nuevo proyecto.</span></div>
+<div style="position:absolute;left:72.06px;top:476.91px" class="cls_002"><span class="cls_002">o Modificar el logo y la descripción de la pantalla de login.</span></div>
+<div style="position:absolute;left:72.06px;top:491.92px" class="cls_002"><span class="cls_002">o Modificar el favicon de gitlab.</span></div>
+<div style="position:absolute;left:72.06px;top:506.93px" class="cls_002"><span class="cls_002">- (2 puntos) Detallar el proceso para poder importar proyectos de GitHub a nuestro</span></div>
+<div style="position:absolute;left:72.06px;top:521.94px" class="cls_002"><span class="cls_002">GitLab tanto por pantalla como utilizando la API.</span></div>
+<div style="position:absolute;left:72.06px;top:536.96px" class="cls_002"><span class="cls_002">- (2 puntos) Documentación correcta en GitHub Pages o GitLab Pages.</span></div>
+<div style="position:absolute;left:72.06px;top:566.98px" class="cls_003"><span class="cls_003">Lo primero que tenemos que hacer es instalar las dependencias de GitLab:</span></div>
+<div style="position:absolute;left:72.06px;top:633.79px" class="cls_003"><span class="cls_003">Cuando tengamos las dependencias correctamente instaladas ya podemos instalar GitLab</span></div>
+<div style="position:absolute;left:72.06px;top:648.80px" class="cls_003"><span class="cls_003">Añadimos el repositorio de GitLab media este curl</span></div>
+<div style="position:absolute;left:72.06px;top:723.86px" class="cls_003"><span class="cls_003">Y instalamos el gitlab-ce</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-298px;top:853px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background2.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:71.57px" class="cls_002"><span class="cls_002">Tambien podemos publicar la feature en caso de que no este terminada y queramos que</span></div>
-<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">nuestros compañeros puedan acceder a ella. Para esto usaremos el comando</span></div>
-<div style="position:absolute;left:72.06px;top:101.59px" class="cls_002"><span class="cls_002">git flow feature publish nombre</span></div>
-<div style="position:absolute;left:72.06px;top:278.74px" class="cls_002"><span class="cls_002">En este caso se han creado 2 features diferentes que modifican el mismo fichero</span></div>
-<div style="position:absolute;left:72.06px;top:530.95px" class="cls_002"><span class="cls_002">Este es el contenido de style.css en newStyleIndex</span></div>
+<img src="assets/background02.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:124.86px" class="cls_003"><span class="cls_003">Entramos al fichero /etc/gitlab/gitlab.rb y cambiamos el campo</span></div>
+<div style="position:absolute;left:72.06px;top:139.87px" class="cls_003"><span class="cls_003">external_url por el dominio que vayamos a usar (En nuestro caso localhost)</span></div>
+<div style="position:absolute;left:72.06px;top:418.36px" class="cls_003"><span class="cls_003">Ahora ejecutamos el siguiente comando para que se aplique la conficuración realizada</span></div>
+<div style="position:absolute;left:72.06px;top:485.16px" class="cls_003"><span class="cls_003">Ahora accedemos a localhost o al dominio que hayas introduccido y veras una pantalla</span></div>
+<div style="position:absolute;left:72.06px;top:500.17px" class="cls_003"><span class="cls_003">donde te pedira crear la contraseña de root</span></div>
+<div style="position:absolute;left:72.06px;top:515.19px" class="cls_003"><span class="cls_003">Despues de crear la contraseña de root podras registrar a un nuevo usuario y disponer de</span></div>
+<div style="position:absolute;left:72.06px;top:530.20px" class="cls_003"><span class="cls_003">una cuenta propia.</span></div>
+<div style="position:absolute;left:72.06px;top:545.21px" class="cls_003"><span class="cls_003">Para modificar el puerto y restringir a los usuarios el cambio de username debemos cambiar</span></div>
+<div style="position:absolute;left:72.06px;top:560.23px" class="cls_003"><span class="cls_003">el fichero gitlab.rb</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-298px;top:1706px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background3.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:311.02px" class="cls_002"><span class="cls_002">Este es el contenido de style.css en newStyleShop</span></div>
-<div style="position:absolute;left:72.06px;top:443.13px" class="cls_002"><span class="cls_002">Ahora vamos a finalizar las 2 features</span></div>
+<img src="assets/background03.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:556.47px" class="cls_003"><span class="cls_003">Cuando tengamos los cambios realizados debemos ejecutar el comando</span></div>
+<div style="position:absolute;left:72.06px;top:623.28px" class="cls_003"><span class="cls_003">Podemos modificar el tiempo de expiración de la sesion entrando en la cuenta root de</span></div>
+<div style="position:absolute;left:72.06px;top:638.29px" class="cls_003"><span class="cls_003">nuestro GitLab, entrando a admin area, en settings, en account and limit</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-298px;top:2559px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background4.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:71.56px" class="cls_002"><span class="cls_002">Como se puede observar hay un conflicto por haber modificado el mismo fichero asi que se</span></div>
-<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">debe corregir manualmente</span></div>
-<div style="position:absolute;left:72.06px;top:447.63px" class="cls_002"><span class="cls_002">Realizamos el commit</span></div>
-<div style="position:absolute;left:72.06px;top:513.69px" class="cls_002"><span class="cls_002">Y finalmente podemos terminar la feature</span></div>
+<img src="assets/background04.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:422.11px" class="cls_003"><span class="cls_003">Para poder usar la api lo primero que vamos a necesitar es generar un access token desde</span></div>
+<div style="position:absolute;left:72.06px;top:437.12px" class="cls_003"><span class="cls_003">los settings del usuario</span></div>
+<div style="position:absolute;left:72.06px;top:666.06px" class="cls_003"><span class="cls_003">Gracias a este token podemos por ejemplo obtener todos los usuarios que hay en el gitlab</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-298px;top:3412px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background5.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:71.57px" class="cls_002"><span class="cls_002">- (1 punto) Crear una nueva release con todas las features creadas.</span></div>
-<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">Para crear una release debemos usar el comando git flow release start nombre</span></div>
-<div style="position:absolute;left:72.06px;top:254.72px" class="cls_002"><span class="cls_002">- (1 punto) Simular que se ha detectado un error en la release y solucionarlo.</span></div>
-<div style="position:absolute;left:72.06px;top:269.73px" class="cls_002"><span class="cls_002">Si hay algun error en la release se debe modificar en la misma release</span></div>
-<div style="position:absolute;left:72.06px;top:446.13px" class="cls_002"><span class="cls_002">- (2 punto) Publicar la release en producción y esta debe quedar etiquetada.</span></div>
-<div style="position:absolute;left:72.06px;top:461.14px" class="cls_002"><span class="cls_002">Finalizaremos la release con git flow release finish nombre</span></div>
+<img src="assets/background05.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:506.93px" class="cls_003"><span class="cls_003">Usando la api podemos crear usuarios</span></div>
+<div style="position:absolute;left:72.06px;top:696.84px" class="cls_003"><span class="cls_003">Tambien modificar usuarios (Hay que especificar que usuario se tiene que modificar</span></div>
+<div style="position:absolute;left:72.06px;top:711.85px" class="cls_003"><span class="cls_003">mediante el id)</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-298px;top:4265px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background6.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:71.56px" class="cls_002"><span class="cls_002">En el proceso se pedira el commit para el merge con develop por el commit del arreglo y la</span></div>
-<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">descripción de la tag que se va a crear.</span></div>
-<div style="position:absolute;left:72.06px;top:101.59px" class="cls_002"><span class="cls_002">Finalmente subimos los cambios de master al repositorio en remoto y ademas subimos las</span></div>
-<div style="position:absolute;left:72.06px;top:116.60px" class="cls_002"><span class="cls_002">tags con gut push --tags</span></div>
-<div style="position:absolute;left:72.06px;top:368.06px" class="cls_002"><span class="cls_002">- (1 punto) Simular la existencia de un error en producción y solucionarlo por medio de</span></div>
-<div style="position:absolute;left:72.06px;top:383.08px" class="cls_002"><span class="cls_002">un hotfix.</span></div>
-<div style="position:absolute;left:72.06px;top:398.09px" class="cls_002"><span class="cls_002">Vamos a corregir un error en el diseño de la web usando el comando</span></div>
-<div style="position:absolute;left:72.06px;top:413.10px" class="cls_002"><span class="cls_002">git flow hotfix start nombre</span></div>
+<img src="assets/background06.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:223.94px" class="cls_003"><span class="cls_003">Y finalmente borrar usuarios (Igual que al modificarlos hay que especificar el id)</span></div>
+<div style="position:absolute;left:72.06px;top:320.02px" class="cls_003"><span class="cls_003">Para bloquear un usuario debemos especificar el id en la ruta y añadir despues de el id</span></div>
+<div style="position:absolute;left:72.06px;top:335.04px" class="cls_003"><span class="cls_003">/block</span></div>
+<div style="position:absolute;left:72.06px;top:439.37px" class="cls_003"><span class="cls_003">Para desbloquear lo mismo que cuando bloqueamos pero tenemos que poner /unblock</span></div>
+<div style="position:absolute;left:72.06px;top:558.72px" class="cls_003"><span class="cls_003">Para pasar un usuario a admin debemos actualizar el parametro is_admin usando el</span></div>
+<div style="position:absolute;left:72.06px;top:573.74px" class="cls_003"><span class="cls_003">parametro admin=true en una peticion sobre el usuario</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-298px;top:5118px;width:596px;height:843px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="assets/background7.jpg" width=596 height=843></div>
-<div style="position:absolute;left:72.06px;top:71.56px" class="cls_002"><span class="cls_002">Cuando tengamos el cambio arreglado realizamos el commit y finalizamos el hotfix con el</span></div>
-<div style="position:absolute;left:72.06px;top:86.58px" class="cls_002"><span class="cls_002">comando git flow hotfix finish nombre. En el proceso se creara una tag asi que al momento</span></div>
-<div style="position:absolute;left:72.06px;top:101.59px" class="cls_002"><span class="cls_002">de subirla a remoto tambien habra que realizar el git push --tags</span></div>
-<div style="position:absolute;left:72.06px;top:581.99px" class="cls_002"><span class="cls_002">- (3 puntos) Documentar el proceso completo en Github Pages o Gitlab Pages.</span></div>
+<img src="assets/background07.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:71.56px" class="cls_003"><span class="cls_003">Podemos tambien crear proyectos desde la api mediante /projects</span></div>
+<div style="position:absolute;left:72.06px;top:220.94px" class="cls_003"><span class="cls_003">En esta captura creo un nuevo proyecto solo poniendole en nombre que va a tener. Si no se</span></div>
+<div style="position:absolute;left:72.06px;top:235.95px" class="cls_003"><span class="cls_003">especifica usuario se atribuye directamente al usuario root.</span></div>
+<div style="position:absolute;left:72.06px;top:250.97px" class="cls_003"><span class="cls_003">Para crear un proyecto para un usuario debemos agregar la ruta /user/:id-user</span></div>
+<div style="position:absolute;left:72.06px;top:548.97px" class="cls_003"><span class="cls_003">Para modificar la apariencia de la pagina debemos acceder desde un usuario administrados</span></div>
+<div style="position:absolute;left:72.06px;top:563.98px" class="cls_003"><span class="cls_003">a la admin area y entra a apperance</span></div>
+<div style="position:absolute;left:72.06px;top:578.99px" class="cls_003"><span class="cls_003">En este ejemplo modifico la apariencia de la pagina de creación de proyectos</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-298px;top:5971px;width:596px;height:843px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="assets/background08.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:724.61px" class="cls_003"><span class="cls_003">Tambien podemos modificar:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-298px;top:6824px;width:596px;height:843px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="assets/background09.jpg" width=596 height=843></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-298px;top:7677px;width:596px;height:843px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="assets/background10.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:71.56px" class="cls_003"><span class="cls_003">Para importar un proyecto de github a gitlab debemos entrar a crear un nuevo proyecto y a</span></div>
+<div style="position:absolute;left:72.06px;top:86.58px" class="cls_003"><span class="cls_003">importar proyecto ahi debemos seleccionar github</span></div>
+<div style="position:absolute;left:72.06px;top:211.93px" class="cls_003"><span class="cls_003">Necesitamos generar un token desde github</span></div>
+<div style="position:absolute;left:72.06px;top:226.95px" class="cls_003"><span class="cls_003">IMPORTANTE</span></div>
+<div style="position:absolute;left:72.06px;top:241.96px" class="cls_003"><span class="cls_003">El mail tiene que ser el mismo tanto en github como en gitlab</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-298px;top:8530px;width:596px;height:843px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="assets/background11.jpg" width=596 height=843></div>
+<div style="position:absolute;left:72.06px;top:71.56px" class="cls_003"><span class="cls_003">Al acceder con el token en gitlab veremos todos los proyectos de github que podemos</span></div>
+<div style="position:absolute;left:72.06px;top:86.58px" class="cls_003"><span class="cls_003">importar</span></div>
+<div style="position:absolute;left:72.06px;top:368.06px" class="cls_003"><span class="cls_003">Para realizar una importacion desde la api debemos usar la ruta /import/github</span></div>
+<div style="position:absolute;left:72.06px;top:383.08px" class="cls_003"><span class="cls_003">Hay que añadir el token que hemos generado antes</span></div>
+<div style="position:absolute;left:72.06px;top:575.24px" class="cls_003"><span class="cls_003">Tambien hay que añadir el id del repositorio con el parametro repo_id</span></div>
 </div>
 
 </body>
